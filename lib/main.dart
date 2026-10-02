@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -55,6 +57,9 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  void testFormat() {
+    log('hi');
+  }
 
   void _incrementCounter() {
     setState(() {
@@ -119,8 +124,4 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
-}
-
-void testFormat() {
-  print('hi');
 }
